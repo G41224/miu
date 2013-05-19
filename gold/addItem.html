@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="This is a web app for drink saving" />
+		<meta name="keywords" content="Drink save, alcohol, drink storage, softdrink" />
+		<meta name="robots" content= "index, follow" />
+		<meta name="viewport" content="user-scalable=yes, width=device-width" />
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		<link rel="stylesheet" href="css/formstyle.css" type="text/css" />
+		<title>  </title>
+		
+		
+	</head>
+
+	<body>
+		<h1>A new drink to add!</h1>
+		<a href="#" id="displyStorage">Saved Drinks</a>
+		<a href="#" id="clearStorage">Clear your data</a>
+		<form action="#" method="post">
+			<fieldset id="drinkInfo">
+				<legend>Drink INFO</legend>
+				<ul id="error"> </ul>
+				<ul>
+					<li><label for="drinkName" >Drink Name:</label><input type="text" id="drinkName" /> </li>
+					
+					<li>
+						<label for="drinkType">type of drink</label>
+						<select id="drinkType">
+							<option value="--Chose Your Drink Type--" >Chose Your Drink Type</option>
+							<option value="Non-Alcoholic">Non-alcoholic</option>
+							<option value="Alcoholic">Alcoholic</option>							
+						</select>
+					</li>
+					
+					<li>
+						<fieldset id="sofDrin">
+							<legend>Soft Drink Selection</legend>
+							<ul id="softDrinkList">
+								<li>
+									<input type="checkbox" value="pepsi" id="pepsi" />
+									<label for="Pepsi">Pepsi</label> 
+										<ul id="pepsiType">
+											<li><input type="checkbox" value="regular pepsi" id="regularpepsi" name="pepsiType" /><label for="regular pepsi">regular pepsi</label></li>
+											<li><input type="checkbox" value="cherry pepsi" id="cherrypepsi" name="pepsiType" /><label for="cherry pepsi">cherry pepsi</label> </li>
+										</ul>
+									</li>
+								<li>
+									<input type="checkbox" value="Dr. Pepper" id="Dr. Pepper" />
+									<label for="Dr. Pepper">Dr. Pepper</label> 
+										<ul id="pepperType">
+											<li><input type="checkbox" value="regular Dr. pepper" id="regularPepp" name="pepperType" /><label for="regular Dr. pepper">regular Dr. pepper</label></li>
+											<li><input type="checkbox" value="cherry Dr. pepper" id="cherrypepp" name="pepperType" /><label for="cherry Dr. pepper">cherry Dr. pepper</label> </li>
+<!--I'll be adding more options to the menu above at a later date-->
+										</ul>
+								</li>
+								<li><label for="newSoftDrinkName">Add A New Soft Drink Name:</label><input type="text" id="addSoftDrinkName" /> </li>					
+
+							</ul>
+						</fieldset>
+						
+					</li>
+					
+					<li>
+						<fieldset id="alcDrin">
+							<legend>Alcoholi c Drinks</legend>
+							<ul id="alcoholicDrinkList">
+								<li>
+									<input type="checkbox" value="Jack Daniel's" id="JackD" />
+									<label for="Jack Daniel's">Jack Daniel's</label>
+									<ul id="jackType">
+										<li><input type="checkbox" value="regular Jack Daniel's" id="regJackD" name="jackType" /><label for="regular Jack Daniel's">regular Jack Daniel's</label></li>
+										<li><input type="checkbox" value="single barrel Jack Daniel's" id="singJackD" name="jackType" /><label for="single barrel Jack Daniel's">single barrel Jack Daniel's</label></li>
+										<li><input type="checkbox" value=" Jack Daniel's Tennessee Honey" id="jackTenn" name="jackType" /><label for="Jack Daniel's Tennessee Honey">Jack Daniel's Tennessee Honey</label></li>
+									</ul>
+								</li>
+								<li>
+									<input type="checkbox" value="Johnnie Walker" id="JWalker" />
+									<label for="Jack Daniel's">Johnnie Walker</label>
+									<ul id="jWalkType">
+										<li><input type="checkbox" value="red label Johnnie Walker" id="JWalkerRed" name="johnnieType" /><label for="red label Johnnie Walker">red lable Johnnie Walker</label></li>
+										<li><input type="checkbox" value="black label Johnnie Walker" id="JWalkerBlack" name="johnnieType" /><label for="black label Johnnie Walker">black label Johnnie Walker</label></li>
+										<li><input type="checkbox" value="blue label Johnnie Walker" id="JWalkerBlue" name="johnnieType" /><label for="blue label Johnnie Walker">blue label Johnnie Walker</label></li>
+<!--I'll be adding more options to the menu above at a later date-->
+									</ul>
+								</li>
+								<li><label for="newAlcoholName">Add A New Alcohol Name:</label><input type="text" id="addAlcoholicDrinkName" /> </li>					
+							</ul>
+						</fieldset>
+					</li>
+					<li><label for="Date input">The date you first had this drink:<input type="date" id="date" /></label> </li>
+					<li><label for="note">add a note about the drink</label><textarea id="note">add a nice note here.</textarea></li>
+					<li><input type="hidden" value="this is hidden" /></li>
+				</ul>
+			</fieldset>
+			<input type="submit" value="Save My Drink!" id="submit"/>
+		</form>
+		<script type="text/javascript" src="js/json.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

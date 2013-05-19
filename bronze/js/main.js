@@ -62,6 +62,7 @@ function getStorage (){
 	var makeDiv = document.createElement("div");
 	makeDiv.setAttribute("id","drinks");
 	var makeList = document.createElement("ul");
+	makeList.setAttribute("id", "savedDrink");
 	makeDiv.appendChild(makeList);
 	document.body.appendChild(makeDiv);
 	for(var i=0, len=localStorage.length; i<len; i++){
@@ -225,17 +226,20 @@ function validate(e){
 	
 };
 
+
+
 var err = $("error");
 var save = $("submit");
 save.addEventListener("click", validate);
 
 var displayLink = $("displyStorage")
-displayLink.addEventListener("click", getStorage)
+displayLink.addEventListener("click", getStorage);
 
 var clearLink = $("clearStorage");
 clearLink.addEventListener("click", clearStorage);
 
-
+var storageAzLink = $("azLink")
+storageAzLink.addEventListener("click", getStorage);
 
 
 

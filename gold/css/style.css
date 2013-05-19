@@ -1,0 +1,17 @@
+body {
+    background: none repeat scroll 0 0 #234C61;
+}
+h2 {
+    text-align: left;
+    color: #E0DD1B;
+}
+p {
+    font: small-caps bold 20px "Arial Black";
+    text-align: left;
+    color: #E0DD1B;
+}
+a {
+    font: small-caps 30px Arial;
+    text-align: center;
+    color: #FA4F2D;
+}

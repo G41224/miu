@@ -1,0 +1,52 @@
+body {
+background: #286280;
+}
+h1{
+	color: #E0DD1B;
+}
+a #displyStorage{
+	margin: 5px;
+}
+a #clearStorage{
+	margin:5px;	
+}
+
+fieldset #sofDrin{
+	background: #3786AD;
+	
+}
+ul #softDrinkList{
+	font-weight: bold;
+	
+}
+ul #pepsiType{
+	font-weight: normal;
+	font-style: italic;
+}
+ul #pepperType{
+	font-weight: normal;
+	font-style: italic;
+}
+fieldset #alcDrin{
+	background: #3786AD;
+	
+}
+ul #alcoholicDrinkList{
+	font-weight: bold;
+
+}
+ul #jackType{
+	font-weight: normal;
+	font-style: italic;
+	
+}
+ul #jWalkType{
+	font-weight: normal;
+	font-style: italic;
+	
+}
+input #submit{
+	color: #F58B45;
+	
+}
+
